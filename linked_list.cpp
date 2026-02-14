@@ -29,7 +29,7 @@ void display() {
 		std::cout << "This List is Empty" << '\n';
 	}
 	else {
-		while (current->next != NULL) {
+		while (current != NULL) {
 			std::cout << current->value << '\n';
 			current = current->next;
 		}
@@ -37,14 +37,15 @@ void display() {
 }
 
 int main() {
-	append(1);
-	append(2);
-	append(3);
-	append(4);
-	append(5);
-	append(6);
-	append(7);
-
+	int n;
+	std::cout << "Amount of items: ";
+	std::cin >> n;
+	for (int i = 1; i <= n; i++) {
+		int data;
+		std::cout << "Item " << i << ": ";
+		std::cin >> data;
+		append(data);
+	}
 	display();
 	return 0;
 }
