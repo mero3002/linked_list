@@ -1,4 +1,5 @@
 # cannot deal with floating values
+# has a case bug in the (review last action) function
 balance = 0
 last_action = None
 action_case = None
