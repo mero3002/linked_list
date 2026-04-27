@@ -1,1 +1,1 @@
-an archive for mini projects snippets from each programming language i learn.
+an archive for mini code snippets from each programming language i learn.
